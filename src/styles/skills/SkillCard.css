@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem; /* w-32 */
+    height: 8rem; /* h-32 */
+    background-color: var(--primary); /* Assume primary color is defined in CSS variables */
+    border: 2px solid var(--secondary); /* Assume secondary color is defined in CSS variables */
+    padding: 1rem; /* px-4 py-4 */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon {
+    color: black;
+  }
+  
+  .skillName {
+    margin-top: 0.5rem; /* mt-2 */
+    font-size: 1.125rem; /* text-lg */
+    color: black;
+  }
+  

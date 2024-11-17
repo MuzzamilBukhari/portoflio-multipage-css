@@ -1,11 +1,12 @@
-import Education from "@/components/Education";
-import InfoSection from "@/components/InfoSection";
+import {InfoSection, Skills } from "@/components";
+import Contact from "@/components/contact/Contact";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
       <InfoSection />
-      <Education />
-    </>
+      <Skills />
+      <Contact />
+    </div>
   );
-}
+} 

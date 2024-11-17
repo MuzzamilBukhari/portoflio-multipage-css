@@ -1,0 +1,123 @@
+/* Service Component Styles */
+.service-container {
+    background-color: #292524; /* Tailwind 'bg-stone-950' */
+    color: white;
+    padding: 3rem;
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+    background-position: center;
+    background-size: cover;
+  }
+  
+
+  .service-title-section {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .service-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .color {
+    color: #52602E ;
+  }
+  .service-subtitle {
+    font-size: 1.25rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background-color: #567741; /* Tailwind 'bg-secondary' */
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    background-color: #52602E; /* Tailwind 'bg-primary' */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon-wrapper {
+    background-color: #52602E; /* Tailwind 'bg-primary' */
+    padding: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-card:hover .service-icon-wrapper {
+    background-color: #567741; /* Tailwind 'bg-secondary' */
+  }
+
+
+  .service-card1 {
+    background-color: #52602E; /* Tailwind 'bg-secondary' */
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .service-card1:hover {
+    transform: scale(1.05);
+    background-color: #567741; /* Tailwind 'bg-primary' */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon-wrapper1 {
+    background-color: #567741; /* Tailwind 'bg-primary' */
+    padding: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-card1:hover .service-icon-wrapper1 {
+    background-color: #52602E; /* Tailwind 'bg-secondary' */
+  }
+  
+
+
+  .service-icon {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .service-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .service-card-description {
+    color: white;
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,71 @@
+.skillSection {
+    background-color: black;
+    padding-top: 5rem; /* pt-20 */
+  }
+  
+  .mainSection {
+    padding-top: 5rem; /* pt-20 */
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 4rem; /* mb-16 */
+    padding-top: 2.5rem; /* pt-10 */
+  }
+  
+  .title {
+    font-size: 3.75rem; /* text-6xl */
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1rem; /* mb-4 */
+    padding-bottom: 2rem; /* pb-8 */
+  }
+  
+  @media (min-width: 640px) {
+    .title {
+      font-size: 4.5rem; /* sm:text-7xl */
+    }
+  }
+  
+  .highlight {
+    color: var(--secondary); /* Assume secondary color defined in CSS variables */
+  }
+  
+  .description {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 36rem; /* xl:w-2/4 */
+    margin: 0 auto;
+    padding: 0 1rem; /* px-4 */
+    padding-top: 2rem; /* pt-8 */
+  }
+  
+  .skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* gap-6 */
+    font-size: 2.5rem; /* text-4xl */
+  }
+  
+  .additionalSkillsSection {
+    margin-top: 1.5rem; /* mt-6 */
+  }
+  
+  .additionalSkillsContainer { 
+    max-width: 1200px;
+    padding: 2rem 1rem; /* px-4 py-8 */
+    margin: 0 auto;
+  }
+  
+  .additionalSkillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* gap-6 */
+    font-size: 2.5rem; /* text-4xl */
+  }
+  
