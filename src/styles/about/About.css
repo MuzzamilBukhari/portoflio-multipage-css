@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #ff7f50;
-  --secondary-color: #2e2c2b;
+  --primary-color: #C64FEC;
+  --secondary-color: #C254DE;
   --text-color: white;
-  --bg-color: #1c1917;
+  --bg-color: black;
 }
 
 .about-section {
@@ -147,3 +147,6 @@
     max-width: 350px;
   }
 }
+
+
+

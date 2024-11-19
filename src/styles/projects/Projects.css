@@ -1,108 +1,108 @@
 .projects-section {
-    background-color: #1c1c1c; /* bg-stone-950 */
-    padding-top: 220px;
-    padding-bottom: 100px;
-    font-family: "Roboto", sans-serif; /* Tailwind’s body-font equivalent */
-  }
-  
-  .projects-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
+  background-color: black; 
+  padding-top: 220px;
+  padding-bottom: 100px;
+  font-family: "Roboto", sans-serif; 
+}
+
+.projects-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 3rem; /* default, for screens below sm */
+  font-weight: 800;
+  color: white;
+}
+
+@media (min-width: 640px) {
   .projects-title {
-    font-size: 3rem; /* default, for screens below sm */
-    font-weight: 800;
-    color: white;
+    font-size: 5rem; 
   }
-  
-  @media (min-width: 640px) {
-    .projects-title {
-      font-size: 5rem; 
-    }
-  }
-  
-  
-  .tagline {
+}
+
+
+.tagline {
 text-align: center;
 font-size: 1.3rem;
 margin-top: -4px;
-color: #567741;
-  }
-
-  .projects-description {
-    font-size: 1rem;
-    font-weight: 400;
-    color: white;
-    margin-bottom: 1.25rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    line-height: 1.5;
-  }
-  
-  @media (min-width: 640px) {
-    .projects-description {
-      font-size: 1.125rem;
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .projects-description {
-      font-size: 1.25rem;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-    }
-  }
-  
-  .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem; /* gap-10 */
-  }
-  
-  .github-button {
-    background-color: #52602E; 
-    display: flex;
-    margin: 4rem auto;           /* Centers the button horizontally */
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.5rem;
-    align-items: center;
-    text-decoration: none;
-    width: fit-content;     
-    max-width: 100%; 
+color: #C254DE;
 }
 
-  .github-button:hover {
-    background-color: #567741; 
-  }
-  
-  .github-button img {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  
-  .github-button-text {
-    margin-left: 1rem;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    line-height: 1.2;
-  }
-  
-  .github-button-label {
-    font-size: 1rem;
-    color: black;
-    margin-bottom: 0.25rem;
-  }
-  
-  .github-button-username {
+.projects-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 1.25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  .projects-description {
     font-size: 1.125rem;
-    font-weight: bold;
-    color: black;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .projects-description {
+    font-size: 1.25rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* gap-10 */
+}
+
+.github-button {
+  background-color: #C64FEC; 
+  display: flex;
+  margin: 4rem auto;         
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;     
+  max-width: 100%; 
+}
+
+.github-button:hover {
+  background-color: #C254DE; 
+}
+
+.github-button img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.github-button-text {
+  margin-left: 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.github-button-label {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 0.25rem;
+}
+
+.github-button-username {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: black;
+}
+

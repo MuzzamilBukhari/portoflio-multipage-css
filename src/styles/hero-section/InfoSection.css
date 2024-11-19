@@ -55,7 +55,7 @@
   font-size: 1.75rem;
   font-weight: bolder;
   padding-top: 0px;
-  color: #A3E635;
+  color: #C64FEC;
 }
 
 @media (min-width: 640px) {
@@ -80,7 +80,7 @@
 .hireButton {
   font-weight: bold;
   color: #ffffff;
-  background-color: #A3E635;
+  background-color: #C64FEC;
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -91,7 +91,8 @@
 }
 
 .hireButton:hover {
-  background-color: #4ade80;
+  background-color: #C254DE;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-3px);
 }
+
