@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import NavLink from "./NavLink";
+import Navlink from "./NavLink";
 import Logo from "../../../public/images/pic.jpg";
 import Button from "../Button";
 import "../../styles/navbar/Navbar.css";
@@ -47,9 +47,9 @@ const Navbar = () => {
         <div className="navbar-content">
           <nav className="navbar-nav">
             {navItems.map((item) => (
-              <NavLink slug={item.slug} key={item.id}>
+              <Navlink slug={item.slug} key={item.id}>
                 {item.name}
-              </NavLink>
+              </Navlink>
             ))}
           </nav>
           <a href="/resume.pdf" download>

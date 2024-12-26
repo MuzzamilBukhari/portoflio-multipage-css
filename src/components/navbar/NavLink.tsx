@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import "../../styles/navbar/NavLink.css";
-const NavLink = ({
+import "../../styles/navbar/Navlink.css";
+const Navlink = ({
   children,
   slug,
   onclick,
@@ -17,4 +17,4 @@ const NavLink = ({
   );
 };
 
-export default NavLink;
+export default Navlink;
