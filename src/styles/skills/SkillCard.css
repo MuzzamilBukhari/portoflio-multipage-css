@@ -1,29 +1,39 @@
-.card {
+.skill-card {
+  border: 2px solid var(--dark-primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.skill-header {
+  margin-bottom: 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 8rem; /* w-32 */
-  height: 8rem; /* h-32 */
-  background-color: #C64FEC; 
-  border: 2px solid #C254DE; 
-  padding: 1rem; /* px-4 py-4 */
-  transition: transform 0.3s ease-in-out;
-  border-radius: 20px;
 }
 
-.card:hover {
-  transform: scale(1.1);
+.skill-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--light-bg1);
 }
 
-.icon {
-  color: black;
-}
-
-.skillName {
-  margin-top: 0.5rem; /* mt-2 */
-  font-size: 1.125rem; /* text-lg */
-  color: black;
+.skill-percentage {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--light-bg1);
 }
 
 
+.skill-bar-container {
+  width: 100%;
+  background-color: #374151;
+  border-radius: 9999px;
+  height: 0.75rem;
+}
+
+.skill-bar {
+  background-color: var(--dark-primary);
+  height: 0.75rem;
+  border-radius: 9999px;
+}

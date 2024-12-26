@@ -1,108 +1,81 @@
 .projects-section {
-  background-color: black; 
+  background-color: var(--light-bg2);
+  opacity: 0.98;
   padding-top: 220px;
-  padding-bottom: 100px;
-  font-family: "Roboto", sans-serif; 
+  padding-bottom: 8rem;
+  font-family: var(--body-font);
 }
 
-.projects-container {
-  max-width: 1280px;
-  margin: 0 auto;
+@media (prefers-color-scheme: dark) {
+  .projects-section {
+    background-color: var(--dark-bg1);
+  }
+}
+
+.projects-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
+.projects-subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--light-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  .projects-subtitle {
+    color: var(--dark-primary);
+  }
+}
+
 .projects-title {
-  font-size: 3rem; /* default, for screens below sm */
-  font-weight: 800;
-  color: white;
+  font-size: 3.75rem;
+  color: var(--dark-bg2);
+  font-weight: 700;
 }
 
 @media (min-width: 640px) {
   .projects-title {
-    font-size: 5rem; 
+    font-size: 4.5rem;
   }
 }
 
-
-.tagline {
-text-align: center;
-font-size: 1.3rem;
-margin-top: -4px;
-color: #C254DE;
+@media (prefers-color-scheme: dark) {
+  .projects-title {
+    color: var(--light-bg1);
+  }
 }
 
 .projects-description {
-  font-size: 1rem;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 1.25rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: var(--dark-bg2);
+  padding: 0 2rem;
+  margin-top: 0.5rem;
+  max-width: 600px;
 }
 
-@media (min-width: 640px) {
+@media (prefers-color-scheme: dark) {
   .projects-description {
-    font-size: 1.125rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .projects-description {
-    font-size: 1.25rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    color: var(--light-bg1);
   }
 }
 
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 3rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem; /* gap-10 */
+  margin-top: 5rem;
 }
 
-.github-button {
-  background-color: #C64FEC; 
-  display: flex;
-  margin: 4rem auto;         
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.5rem;
-  align-items: center;
-  text-decoration: none;
-  width: fit-content;     
-  max-width: 100%; 
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
-.github-button:hover {
-  background-color: #C254DE; 
-}
-
-.github-button img {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.github-button-text {
-  margin-left: 1rem;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.github-button-label {
-  font-size: 1rem;
-  color: black;
-  margin-bottom: 0.25rem;
-}
-
-.github-button-username {
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: black;
-}
-

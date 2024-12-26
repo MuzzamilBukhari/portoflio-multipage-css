@@ -1,0 +1,15 @@
+.button {
+  color: var(--dark-primary);
+  background-color: var(--dark-bg1);
+  font-weight: 500;
+  border: 2px solid var(--dark-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-color: var(--dark-primary);
+  color: var(--dark-bg1);
+}

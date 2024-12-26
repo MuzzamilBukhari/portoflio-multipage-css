@@ -1,28 +1,20 @@
-:root {
-  --primary: "#C64FEC";
-  --secondary: "#C254DE";
-}
-
 .nav-link {
   font-weight: 600;
-  margin-right: 0.5rem;
-  padding: 0.5rem 1rem;
   border-radius: 0.75rem;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 0.5rem;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
+
+.nav-link:hover {
+  color: var(--dark-primary);
+  box-shadow: 0 0 0.5rem var(--dark-primary);
+}
+
 
 @media (min-width: 1024px) {
-  .nav-link { 
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .nav-link {
+    padding: 0.5rem 1rem;
   }
-}
-
-.nav-link:hover { 
-  background-color: #C254DE;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  color: white;
 }
 

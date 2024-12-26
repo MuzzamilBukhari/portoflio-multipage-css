@@ -4,57 +4,73 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import Logo from "../../../public/images/pic.jpg";
 import Image from "next/image";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import Button from "../Button";
 import "../../styles/navbar/MobNavbar.css";
+
 const navItems = [
-  { id: 1, name: "Home", slug: "/" },
-  { id: 2, name: "About", slug: "/about" },
-  { id: 3, name: "Projects", slug: "/projects" },
-  { id: 5, name: "GitHub", slug: "https://github.com/MuzzamilBukhari" },
+  {
+    id: 1,
+    name: "Home",
+    slug: "/",
+  },
+  {
+    id: 2,
+    name: "About",
+    slug: "/about",
+  },
+  {
+    id: 3,
+    name: "Projects",
+    slug: "/projects",
+  },
+  {
+    id: 4,
+    name: "Github",
+    slug: "https://github.com/MuzzamilBukhari",
+  },
 ];
 
 const MobNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <header className="mobNavbar-header">
+    <header className="mob-navbar">
       <div className="mob-navbar-container">
-        <Link href="/" className="mob-navbar-logo">
-          <Image src={Logo} alt={""} className="mob-navbar-image" />
+        <Link href={"/"} className="mob-navbar-logo" onClick={toggleNavbar}>
+          <div className="mob-navbar-logo-image-container">
+            <Image src={Logo} alt={""} className="mob-navbar-logo-image" />
+          </div>
           <span>
-            Muzzamil<span className="mob-navbar-secondary-text">Bukhari</span>
+            Muzzamil
+            <span style={{ color: "var(--light-primary)" }}>Bukhari</span>
           </span>
         </Link>
-
-        <button
-          className="mob-navbar-toggle"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <svg
-            className="mob-navbar-icon"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
+      </div>
+      <div className="mob-navbar-controls">
+        <button className="mob-navbar-toggle" onClick={toggleNavbar}>
+          {isOpen ? <RiCloseLine /> : <RiMenu3Line />}
         </button>
       </div>
-      <div>
-        <nav
-          className={`${isOpen ? "mob-navbar-menu-open" : "mob-navbar-menu"}`}
-        >
+
+      <nav className={`mob-navbar-menu ${isOpen ? "open" : ""}`}>
+        <div className="mob-navbar-menu-content">
           {navItems.map((item) => (
-            <NavLink slug={item.slug} key={item.id}>
+            <NavLink slug={item.slug} key={item.id} onclick={toggleNavbar}>
               {item.name}
             </NavLink>
           ))}
-        </nav>
-      </div>
+          <a href="/resume.pdf" download>
+            <Button type="button" onclick={toggleNavbar}>
+              Download Resume
+            </Button>
+          </a>
+        </div>
+      </nav>
     </header>
   );
 };

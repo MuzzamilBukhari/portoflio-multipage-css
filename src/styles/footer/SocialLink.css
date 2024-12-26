@@ -1,0 +1,11 @@
+/* SocialLink.css */
+.social-link {
+  margin-left: 0.75rem;
+  color: #4a5568;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--dark-secondary);
+}
+

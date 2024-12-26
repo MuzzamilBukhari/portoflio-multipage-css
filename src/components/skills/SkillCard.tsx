@@ -1,21 +1,21 @@
-// SkillCard.tsx
 import React from "react";
-import { IconType } from "react-icons";
-import "../../styles/skills/SkillCard.css";
+import "@/styles/skills/SkillCard.css";
 
-const SkillCard = ({
-  skill,
-  icon: Icon,
-  size = 30,
-}: {
+interface SkillCardProps {
   skill: string;
-  icon: IconType;
-  size?: number;
-}) => {
+  percentage: number;
+}
+
+const SkillCard = ({ skill, percentage }: SkillCardProps) => {
   return (
-    <div className="card">
-      <Icon size="size" className="icon" />
-      <span className="skillName">{skill}</span>
+    <div className="skill-card" data-aos="flip-right">
+      <div className="skill-header">
+        <h3 className="skill-name">{skill}</h3>
+        <span className="skill-percentage">{percentage}%</span>
+      </div>
+      <div className="skill-bar-container">
+        <div className="skill-bar" style={{ width: `${percentage}% ` }}></div>
+      </div>
     </div>
   );
 };

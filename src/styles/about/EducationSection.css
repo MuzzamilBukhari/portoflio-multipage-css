@@ -1,0 +1,58 @@
+.education-section {
+  background-color: var(--light-bg2);
+  padding: 5rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .education-section {
+    background-color: var(--dark-bg2);
+  }
+}
+
+.education-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education-title {
+  font-size: 3rem;
+  color: var(--dark-bg2);
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .education-title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .education-title {
+    color: var(--light-bg1);
+  }
+}
+
+.education-description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--light-primary);
+  margin-bottom: 1.25rem;
+  text-align: center;
+  padding: 0 1.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .education-description {
+    color: var(--dark-primary);
+  }
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 1.5rem;
+}

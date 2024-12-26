@@ -1,29 +1,5 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Reset and base styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -31,13 +7,50 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+/* Variables for light and dark mode */
+:root {
+  --light-primary: #14b8a6;
+  --light-secondary: #0d9488;
+  --dark-primary: #69F9EE;
+  --dark-secondary: #3FFCEE;
+  --my-gry: #d1d5db;
+  --footer: #1F4B48;
+  --light-bg1: #ffffff;
+  --light-bg2: #d1d5db;
+  --dark-bg1: #020617;
+  --dark-bg2: #0f172a;
+}
+
+/* Dark mode styles */
+.dark {
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --bg1: var(--dark-bg1);
+  --bg2: var(--dark-bg2);
+  --text: var(--light-bg1);
+}
+
+/* Light mode styles */
+body:not(.dark) {
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --bg1: var(--light-bg1);
+  --bg2: var(--light-bg2);
+  --text: var(--dark-bg1);
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+

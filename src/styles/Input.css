@@ -1,0 +1,25 @@
+.input-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-field {
+  width: 100%;
+  background-color: var(--dark-bg2);
+
+  border-radius: 0.25rem;
+  border: 1px solid var(--dark-primary);
+  font-size: 1rem;
+  outline: none;
+  color: var(--light-bg1);
+  padding: 0.25rem 0.75rem;
+  line-height: 2rem;
+  transition: colors 0.2s ease-in-out;
+}
+
+.input-field:focus {
+  border-color: var(--dark-primary);
+  background-color: transparent;
+  
+  box-shadow: 0 0 0 2px rgba(var(--dark-primary-rgb), 0.8);
+}

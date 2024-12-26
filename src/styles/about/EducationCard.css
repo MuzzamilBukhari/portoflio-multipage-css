@@ -1,0 +1,98 @@
+.education-card {
+  background-color: var(--light-bg2);
+  border: 2px solid var(--light-primary);
+  color: var(--dark-bg2);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  width: 20rem;
+  overflow: hidden;
+  height: 14rem;
+  transition: height 0.3s ease-in-out;
+}
+
+.education-card.expanded {
+  height: auto;
+}
+
+.card-header {
+  height: 7rem;
+}
+
+.institution-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.25rem;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 2px solid var(--light-primary);
+  color: var(--dark-bg2);
+}
+
+.institution-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--light-secondary);
+}
+
+.degree {
+  color: var(--dark-bg2);
+  margin-top: 0.5rem;
+}
+
+.dates {
+  color: var(--dark-bg2);
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}
+
+.highlights {
+  margin-top: 1rem;
+  color: var(--dark-bg2);
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.highlights li {
+  margin-bottom: 0.5rem;
+}
+
+.toggle-button {
+  margin-top: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .education-card {
+    background-color: var(--dark-bg1);
+    border-color: var(--dark-primary);
+    color: var(--light-bg1);
+  }
+
+  .icon-container {
+    border-color: var(--dark-primary);
+    color: var(--light-bg1);
+  }
+
+  .institution-name {
+    color: var(--dark-secondary);
+  }
+
+  .degree,
+  .dates,
+  .highlights {
+    color: var(--myGry);
+  }
+
+  .dates {
+    opacity: 0.8;
+  }
+}

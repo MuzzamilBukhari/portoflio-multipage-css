@@ -1,78 +1,67 @@
-import profile from "../../../public/images/pic.jpg";
-import "../../styles/about/About.css";
-
 import React from "react";
-import { IoIosSchool } from "react-icons/io";
-import { FaUniversity, FaSchool } from "react-icons/fa";
+import profile from "../../../public/images/pic.jpg";
 import Image from "next/image";
+import EducationSection from "./EducationSection";
+import "@/styles/about/About.css";
 
 const About = () => {
   return (
     <section className="about-section">
-      <div className="about-container">
-        <div className="about-header">
-          <div className="profile-image">
-            <Image src={profile} alt="profile" className="image-style" />
+      <div className="container">
+        <h1 className="main-title" data-aos="zoom-in">
+          About <span className="highlight">me</span>
+        </h1>
+        <div className="content-wrapper">
+          <div className="image-container" data-aos="flip-left">
+            <Image
+              src={profile}
+              alt={"profile"}
+              className="profile-image"
+              height={700}
+            />
           </div>
-          <div className="about-text">
-            <h1 className="about-title">
-              About <span className="highlight">me</span>
-            </h1>
-            <p className="about-description">
-              - I specialize in web development and graphic design, creating
-              responsive, user-friendly solutions using technologies like React,
-              Next.js, and Tailwind CSS.
-              <br />
-              - My skills extend to web development, graphic design, and
-              Object-Oriented Programming (OOP), creating optimized and
-              user-focused digital solutions.
-              <br />- With experience in tools like Appwrite and Google Sheets
-              automation, I focus on delivering efficient, visually appealing
-              results while staying up-to-date with the latest trends.
-            </p>
-          </div>
-        </div>
-
-        <div className="cards-container">
-          <div className="card1">
-            <div className="card-header">
-              <div className="icon-container">
-                <IoIosSchool />
-              </div>
-              <h2 className="card-title"> Jinnah Govt College</h2>
+          <div className="text-container">
+            <div
+              className="text-content"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <p>
+                - I&apos;m a passionate web developer and graphic designer with
+                a knack for crafting responsive and user-friendly digital
+                experiences.
+              </p>
+              <p>
+                - Currently in my second year of university, I specialize in
+                building solutions that combine modern technologies with
+                creative designs. Whether it&apos;s developing efficient web
+                applications or designing eye-catching graphics, I thrive on
+                turning ideas into impactful realities.
+              </p>
+              <p>
+                - With skills in Data Structures and Algorithms (DSA),
+                Object-Oriented Programming (OOP), DBMS, assembly language, and
+                operating systems, I approach challenges with both technical
+                expertise and a problem-solving mindset.
+              </p>
+              <p>
+                - My journey in web development has led me to explore frameworks
+                like React and Next.js, while my design background equips me to
+                create visually appealing and intuitive interfaces. I believe in
+                continuously learning and evolving, ensuring my work stays
+                innovative and up-to-date.
+              </p>
+              <p>
+                - Feel free to explore my portfolio to see some of my recent
+                projects and designs. I&apos;m always excited to connect,
+                collaborate, and grow. If you&apos;d like to discuss a project
+                or simply say hello, don&apos;t hesitate to reach out!
+              </p>
             </div>
-            <p className="card-text">
-              Passed out from Jinnah Govt College in 2021 with an 89% aggregate.
-            </p>
-          </div>
-
-          <div className="card1">
-            <div className="card-header">
-              <div className="icon-container secondary-icon">
-                <FaUniversity />
-              </div>
-              <h2 className="card-title">University of Karachi</h2>
-            </div>
-            <p className="card-text">
-              Currently pursuing a Software Engineering degree at UBIT -
-              University of Karachi, in my second year with a CGPA of 3.2.
-            </p>
-          </div>
-
-          <div className="card1">
-            <div className="card-header">
-              <div className="icon-container">
-                <FaSchool />
-              </div>
-              <h2 className="card-title">Governor IT Course</h2>
-            </div>
-            <p className="card-text">
-              Pursuing the IT course at Governor House to expand knowledge and
-              skills in technology, programming, and software development.
-            </p>
           </div>
         </div>
       </div>
+      <EducationSection />
     </section>
   );
 };

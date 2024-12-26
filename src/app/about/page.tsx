@@ -1,8 +1,11 @@
-import { About as AboutComp } from "@/components";
 import React from "react";
-import "../../styles/about/about.page.css"
+import { About as AboutComp } from "@/components";
 const About = () => {
-  return <AboutComp />;
+  return (
+    <div>
+      <AboutComp />
+    </div>
+  );
 };
 
 export default About;
